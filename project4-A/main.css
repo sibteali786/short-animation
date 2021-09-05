@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  background: #181a26;
+}
+.blast {
+  background: url("./spritesheet.png") 0 0 no-repeat;
+  height: 141px;
+  width: 98px;
+  animation: blast-cycle 1s steps(43) infinite backwards;
+  position: absolute;
+  left: 5%;
+  top: 70%;
+}
+.clouds {
+  background: transparent url("./cloud-02.png") 0 0 no-repeat;
+  height: 310px;
+  width: 420px;
+}
+@keyframes blast-cycle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -4300px 0;
+  }
+}

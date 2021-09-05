@@ -9,10 +9,10 @@ body {
 .tuna {
   background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) -800px -2000px
     no-repeat;
-  height: 200px;
-  width: 400px;
+  height: 278px;
+  width: 331px;
   position: absolute;
-  left: 50%;
+  left: 50%;  
   top: 50%;
   transform: translate(-50%, -50%);
 }
