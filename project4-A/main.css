@@ -5,6 +5,9 @@
 body {
   width: 100%;
   background: #181a26;
+  height: 100%;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 .blast {
   background: url("./spritesheet.png") 0 0 no-repeat;
@@ -14,21 +17,25 @@ body {
   position: absolute;
   left: 5%;
   top: 70%;
+  z-index: 1200;
 }
-.clouds {
-  background: transparent url("./cloud-02.png") 0 0 no-repeat;
-  height: 130px;
-  width: 205px;
+.back {
+  background: rgb(46, 40, 40);
+  height: 30%;
+  width: 100%;
   position: absolute;
-  left: 85%;
-  animation: clouds_anim 3s linear infinite backwards;
+  top: 70%;
 }
-@keyframes clouds_anim {
-  100% {
-    transform: translateX(-1200px);
-  }
+.cloud2 {
+  position: absolute;
+  left: 30%;
+  top: 40%;
 }
-
+.cloud3 {
+  position: absolute;
+  left: 25%;
+  top: 35%;
+}
 @keyframes blast-cycle {
   0% {
     background-position: 0 0;
