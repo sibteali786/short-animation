@@ -17,9 +17,18 @@ body {
 }
 .clouds {
   background: transparent url("./cloud-02.png") 0 0 no-repeat;
-  height: 310px;
-  width: 420px;
+  height: 130px;
+  width: 205px;
+  position: absolute;
+  left: 85%;
+  animation: clouds_anim 3s linear infinite backwards;
 }
+@keyframes clouds_anim {
+  100% {
+    transform: translateX(-1200px);
+  }
+}
+
 @keyframes blast-cycle {
   0% {
     background-position: 0 0;
