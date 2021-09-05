@@ -15,27 +15,38 @@ body {
   width: 98px;
   animation: blast-cycle 1s steps(43) infinite backwards;
   position: absolute;
-  left: 25%;
+  left: 45%;
   top: 70%;
-  z-index: 1200;
+  z-index: 4;
 }
 .police {
   background: url("./police.png") 0 0 no-repeat;
   height: 141px;
   width: 80px;
-  animation: police-cycle 1s steps(6) infinite backwards;
+  animation: police-cycle 1s steps(6) infinite both;
+  position: absolute;
+  left: 10%;
+  top: 65%;
+  z-index: 4;
+}
+.car {
+  background: url("./car.png") 0 0 no-repeat;
+  height: 131px;
+  width: 270px;
+  animation: car-cycle 2s steps(4) infinite both;
   position: absolute;
   left: 5%;
-  top: 70%;
-  z-index: 1200;
+  top: 45%;
+  z-index: 3;
 }
 .back {
   background: rgb(46, 40, 40);
-  height: 30%;
+  height: 50%;
   width: 100%;
   position: absolute;
-  top: 70%;
+  top: 54%;
 }
+
 .cloud2 {
   position: absolute;
   left: 30%;
@@ -45,6 +56,33 @@ body {
   position: absolute;
   left: 25%;
   top: 35%;
+}
+.cloud_small {
+  position: absolute;
+  left: 80%;
+  bottom: 50%;
+}
+.cloud_small_1 {
+  position: absolute;
+  left: 75%;
+}
+.pole1 {
+  position: absolute;
+  left: 70%;
+  top: 280px;
+}
+.pole {
+  z-index: 10;
+}
+.pole2 {
+  position: absolute;
+  left: 10%;
+  z-index: 1100;
+}
+.moon {
+  position: absolute;
+  left: 70%;
+  top: -210px;
 }
 @keyframes blast-cycle {
   0% {
@@ -59,6 +97,14 @@ body {
     background-position: 0 0;
   }
   100% {
-    background-position: -493px 0;
+    background-position: -494px 0;
+  }
+}
+@keyframes car-cycle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1099px 0;
   }
 }
