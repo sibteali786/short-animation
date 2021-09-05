@@ -15,6 +15,16 @@ body {
   width: 98px;
   animation: blast-cycle 1s steps(43) infinite backwards;
   position: absolute;
+  left: 25%;
+  top: 70%;
+  z-index: 1200;
+}
+.police {
+  background: url("./police.png") 0 0 no-repeat;
+  height: 141px;
+  width: 80px;
+  animation: police-cycle 1s steps(6) infinite backwards;
+  position: absolute;
   left: 5%;
   top: 70%;
   z-index: 1200;
@@ -42,5 +52,13 @@ body {
   }
   100% {
     background-position: -4300px 0;
+  }
+}
+@keyframes police-cycle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -493px 0;
   }
 }
