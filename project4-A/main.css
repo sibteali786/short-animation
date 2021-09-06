@@ -9,7 +9,7 @@ body {
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
-.blast {
+.robber {
   background: url("./spritesheet.png") 0 0 no-repeat;
   height: 141px;
   width: 98px;
@@ -17,7 +17,6 @@ body {
   position: absolute;
   left: 45%;
   top: 70%;
-  z-index: 4;
 }
 .police {
   background: url("./police.png") 0 0 no-repeat;
@@ -27,7 +26,6 @@ body {
   position: absolute;
   left: 10%;
   top: 65%;
-  z-index: 4;
 }
 .car {
   background: url("./car.png") 0 0 no-repeat;
@@ -37,7 +35,6 @@ body {
   position: absolute;
   left: 5%;
   top: 45%;
-  z-index: 3;
 }
 .back {
   background: rgb(46, 40, 40);
@@ -50,34 +47,31 @@ body {
 .cloud2 {
   position: absolute;
   left: 30%;
-  top: 40%;
+  top: 185px;
 }
 .cloud3 {
   position: absolute;
   left: 25%;
-  top: 35%;
+  top: 185px;
 }
 .cloud_small {
   position: absolute;
   left: 80%;
-  bottom: 50%;
+  bottom: -80px;
 }
 .cloud_small_1 {
   position: absolute;
   left: 75%;
+  bottom: -82px;
 }
 .pole1 {
   position: absolute;
   left: 70%;
   top: 280px;
 }
-.pole {
-  z-index: 10;
-}
 .pole2 {
   position: absolute;
   left: 10%;
-  z-index: 1100;
 }
 .moon {
   position: absolute;

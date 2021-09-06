@@ -9,13 +9,17 @@ window.addEventListener("load", function () {
     { transform: "translateX(100%)" },
     { transform: "translateX(-100%)" },
   ];
+  var framesMoon = [
+    { transform: "translateX(30%)" },
+    { transform: "translateX(-100%)" },
+  ];
 
   var timing = {
-    duration: 6000,
+    duration: 8000,
     iterations: Infinity,
   };
   var timingMoon = {
-    duration: 40000,
+    duration: 90000,
     iterations: Infinity,
   };
   var timingCloud = {
@@ -35,5 +39,5 @@ window.addEventListener("load", function () {
   shapeElement.animate(frames, timing);
   shapePole.animate(frames, timingPole);
   shapePole1.animate(frames, timingPole);
-  shapeMoon.animate(frames, timingMoon);
+  shapeMoon.animate(framesMoon, timingMoon);
 });
