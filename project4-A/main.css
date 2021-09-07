@@ -10,7 +10,7 @@ body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 .robber {
-  background: url("./spritesheet.png") 0 0 no-repeat;
+  background: url("./images/spritesheet.png") 0 0 no-repeat;
   height: 141px;
   width: 98px;
   animation: blast-cycle 1s steps(43) infinite backwards;
@@ -19,7 +19,7 @@ body {
   top: 70%;
 }
 .police {
-  background: url("./police.png") 0 0 no-repeat;
+  background: url("./images/police.png") 0 0 no-repeat;
   height: 141px;
   width: 80px;
   animation: police-cycle 1s steps(6) infinite both;
@@ -28,13 +28,23 @@ body {
   top: 65%;
 }
 .car {
-  background: url("./car.png") 0 0 no-repeat;
+  background: url("./images/car.png") 0 0 no-repeat;
   height: 131px;
   width: 270px;
   animation: car-cycle 2s steps(4) infinite both;
   position: absolute;
   left: 5%;
   top: 45%;
+}
+.Bus {
+  background: url("./images/Bus.png") 0 0 no-repeat;
+  height: 140px;
+  width: 315px;
+  animation: bus-cycle 1s steps(4) infinite both;
+  position: absolute;
+  left: 55%;
+  top: 75%;
+  transform: scaleX(-1);
 }
 .back {
   background: rgb(46, 40, 40);
@@ -47,12 +57,12 @@ body {
 .cloud2 {
   position: absolute;
   left: 30%;
-  top: 185px;
+  top: 20px;
 }
 .cloud3 {
   position: absolute;
   left: 25%;
-  top: 185px;
+  top: 20px;
 }
 .cloud_small {
   position: absolute;
@@ -100,5 +110,13 @@ body {
   }
   100% {
     background-position: -1099px 0;
+  }
+}
+@keyframes bus-cycle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1272px 0;
   }
 }

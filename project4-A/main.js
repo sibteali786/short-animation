@@ -5,12 +5,17 @@ window.addEventListener("load", function () {
   var shapePole = document.querySelector(".pole");
   var shapePole1 = document.querySelector(".pole_1");
   var shapeMoon = document.querySelector(".Moon");
+  var shapeBus = document.querySelector(".Bus");
   var frames = [
     { transform: "translateX(100%)" },
     { transform: "translateX(-100%)" },
   ];
+  var framesBus = [
+    { transform: "translateX(200%)" },
+    { transform: "translateX(-500%)" },
+  ];
   var framesMoon = [
-    { transform: "translateX(30%)" },
+    { transform: "translateX(10%)" },
     { transform: "translateX(-100%)" },
   ];
 
@@ -19,7 +24,7 @@ window.addEventListener("load", function () {
     iterations: Infinity,
   };
   var timingMoon = {
-    duration: 90000,
+    duration: 130000,
     iterations: Infinity,
   };
   var timingCloud = {
@@ -34,10 +39,15 @@ window.addEventListener("load", function () {
     duration: 7000,
     iterations: Infinity,
   };
+  var timingBus = {
+    duration: 10000,
+    iterations: Infinity,
+  };
   shapeElementCloud_big.animate(frames, timingCloud_big);
   shapeElementCloud.animate(frames, timingCloud);
   shapeElement.animate(frames, timing);
   shapePole.animate(frames, timingPole);
   shapePole1.animate(frames, timingPole);
   shapeMoon.animate(framesMoon, timingMoon);
+  shapeBus.animate(framesBus, timingBus);
 });
