@@ -224,3 +224,40 @@ body {
     height: 0%;
   }
 }
+
+#Button {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 36%;
+}
+Button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: rgb(247, 153, 13);
+  font-family: "Lobster";
+  font-size: 1.5rem;
+  animation: button 1500ms ease-in infinite both;
+  background: #000;
+  border-left: 0;
+  border-right: 0;
+}
+
+@keyframes button {
+  0% {
+    transform: scale(1);
+    border: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    border-bottom: 6px solid rgb(255, 255, 255);
+    border-top: 6px solid rgb(255, 255, 255);
+  }
+
+  100% {
+    transform: scale(1);
+    border-bottom: 0 solid #ffffff;
+  }
+}

@@ -63,4 +63,10 @@ window.addEventListener("load", function () {
   shapePole1.animate(frames, timingPole);
   shapeMoon.animate(framesMoon, timingMoon);
   shapeBus.animate(framesBus, timingBus);
+
+  //  Stoping the animation
+
+  $("#pause").click(function () {
+    $(".Bus").stop(true, false);
+  });
 });
