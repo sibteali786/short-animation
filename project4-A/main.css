@@ -62,8 +62,9 @@ body {
 }
 .cloud3 {
   position: absolute;
-  left: 25%;
+  left: 30%;
   top: 20px;
+  transform: scaleX(1.2);
 }
 .cloud_small {
   position: absolute;
@@ -140,6 +141,7 @@ body {
   position: absolute;
   left: 71px;
   top: -27px;
+  transform: scale3d(1.1, 1.1, 1.1);
 }
 .cld-4 {
   position: absolute;
