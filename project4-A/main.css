@@ -34,7 +34,7 @@ body {
   animation: car-cycle 2s steps(4) infinite both;
   position: absolute;
   left: 5%;
-  top: 45%;
+  top: 55%;
 }
 .Bus {
   background: url("./images/Bus.png") 0 0 no-repeat;
@@ -48,16 +48,17 @@ body {
 }
 .back {
   background: rgb(46, 40, 40);
-  height: 50%;
+  height: 39%;
   width: 100%;
   position: absolute;
-  top: 54%;
+  top: 62%;
 }
 
 .cloud2 {
   position: absolute;
-  left: 30%;
-  top: 20px;
+  left: 37%;
+  top: 51px;
+  transform: scaleX(-1.5);
 }
 .cloud3 {
   position: absolute;
@@ -77,16 +78,17 @@ body {
 .pole1 {
   position: absolute;
   left: 70%;
-  top: 280px;
+  top: 458px;
 }
 .pole2 {
   position: absolute;
   left: 10%;
+  top: 260px;
 }
 .moon {
   position: absolute;
   left: 70%;
-  top: -210px;
+  top: -38px;
 }
 @keyframes blast-cycle {
   0% {
@@ -119,4 +121,29 @@ body {
   100% {
     background-position: -1272px 0;
   }
+}
+
+.Text {
+  position: absolute;
+  top: 10px;
+}
+
+.cld-2 {
+  position: absolute;
+  top: 10px;
+  left: 76px;
+}
+.cld-3 {
+  position: absolute;
+}
+.cld-1 {
+  position: absolute;
+  left: 71px;
+  top: -27px;
+}
+.cld-4 {
+  position: absolute;
+  left: 425px;
+  top: 60px;
+  transform: scale3d(1.5, 1.5, 1.5);
 }
