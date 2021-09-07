@@ -64,7 +64,3 @@ window.addEventListener("load", function () {
   shapeMoon.animate(framesMoon, timingMoon);
   shapeBus.animate(framesBus, timingBus);
 });
-
-$(window).on("load", function () {
-  $(".loader-wrapper").fadeOut("slow");
-});
