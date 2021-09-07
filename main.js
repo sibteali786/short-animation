@@ -56,17 +56,53 @@ window.addEventListener("load", function () {
     duration: 10000,
     iterations: Infinity,
   };
-  shapeElementCloud_big.animate(frames, timingCloud_big);
-  shapeElementCloud.animate(frames, timingCloud);
-  shapeElement.animate(frames, timing);
-  shapePole.animate(frames, timingPole);
-  shapePole1.animate(frames, timingPole);
-  shapeMoon.animate(framesMoon, timingMoon);
-  shapeBus.animate(framesBus, timingBus);
+  BigCloud = shapeElementCloud_big.animate(frames, timingCloud_big);
+  smallCloud = shapeElementCloud.animate(frames, timingCloud);
 
+  pole1 = shapePole.animate(frames, timingPole);
+  pole2 = shapePole1.animate(frames, timingPole);
+  Moon = shapeMoon.animate(framesMoon, timingMoon);
+  Bus = shapeBus.animate(framesBus, timingBus);
+  shapeAnimate = shapeElement.animate(frames, timing);
   //  Stoping the animation
-
-  $("#pause").click(function () {
-    $(".Bus").stop(true, false);
+  document.querySelector("#play").addEventListener("click", function () {
+    shapeAnimate.play();
+    BigCloud.play();
+    smallCloud.play();
+    pole1.play();
+    pole2.play();
+    Moon.play();
+    Bus.play();
   });
+  document.querySelector("#pause").addEventListener("click", function () {
+    shapeAnimate.pause();
+    BigCloud.pause();
+    smallCloud.pause();
+    pole1.pause();
+    pole2.pause();
+    Moon.pause();
+    Bus.pause();
+  });
+  document
+    .querySelector("#IncreaseRate")
+    .addEventListener("click", function () {
+      shapeAnimate.updatePlaybackRate(shapeAnimate.playbackRate * 1.2);
+      BigCloud.updatePlaybackRate(shapeAnimate.playbackRate * 1.2);
+      smallCloud.updatePlaybackRate(shapeAnimate.playbackRate * 1.2);
+      pole1.updatePlaybackRate(shapeAnimate.playbackRate * 1.2);
+      pole2.updatePlaybackRate(shapeAnimate.playbackRate * 1.2);
+      Moon.updatePlaybackRate(shapeAnimate.playbackRate * 1.2);
+      Bus.updatePlaybackRate(shapeAnimate.playbackRate * 1.2);
+    });
+  document
+    .querySelector("#DecreaseRate")
+    .addEventListener("click", function () {
+      shapeAnimate.updatePlaybackRate(shapeAnimate.playbackRate / 1.2);
+      BigCloud.updatePlaybackRate(shapeAnimate.playbackRate / 1.2);
+      smallCloud.updatePlaybackRate(shapeAnimate.playbackRate / 1.2);
+      pole1.updatePlaybackRate(shapeAnimate.playbackRate / 1.2);
+      pole2.updatePlaybackRate(shapeAnimate.playbackRate / 1.2);
+      Moon.updatePlaybackRate(shapeAnimate.playbackRate / 1.2);
+      Bus.updatePlaybackRate(shapeAnimate.playbackRate / 1.2);
+    });
 });

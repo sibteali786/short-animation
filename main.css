@@ -239,7 +239,7 @@ Button {
   color: rgb(247, 153, 13);
   font-family: "Lobster";
   font-size: 1.5rem;
-  animation: button 1500ms ease-in infinite both;
+  animation: button 1500ms ease-in-out infinite;
   background: #000;
   border-left: 0;
   border-right: 0;
@@ -251,7 +251,7 @@ Button {
     border: 0;
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.02);
     border-bottom: 6px solid rgb(255, 255, 255);
     border-top: 6px solid rgb(255, 255, 255);
   }
